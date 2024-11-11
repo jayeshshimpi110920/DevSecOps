@@ -2,6 +2,8 @@
 
 DevOps is a way of working that combines **development (Dev)** and **operations (Ops)** teams to build, test, and release software faster and more reliably. 
 
+> devops is set of practice combines software devlopment and operation.
+
 The main idea of DevOps is to **break down silos** between teams and create a smooth, automated process for software development and deployment. This involves:
 
 - **Collaboration:** Developers and IT operations work closely together.
@@ -10,6 +12,11 @@ The main idea of DevOps is to **break down silos** between teams and create a sm
 - **Monitoring:** Applications are constantly monitored to catch issues early.
 
 The goal of DevOps is to make software development faster, more efficient, and more reliable by creating a smooth workflow from coding to deployment.
+
+## video leacture :
+* i will give code every day or couple of times in a day
+* `compile` an `deploy` it on `test` and `prod` servers
+* `prod` server are used by `client`. so it should be `up and running` all the time.
 
 
 ---
