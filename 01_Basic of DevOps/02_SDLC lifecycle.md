@@ -7,6 +7,7 @@
 DevOps LifeCycle -
 <img width="476" alt="{FDC6958C-9308-4EBC-AEF0-04F4E3389A1D}" src="https://github.com/user-attachments/assets/0fb9f98d-c311-4ff4-960f-fe5d33614a9a">
 
+<img width="462" alt="{3889D77C-16C6-4185-8896-5A312E4FE601}" src="https://github.com/user-attachments/assets/bfa89ef2-4762-4bce-85bc-ed093140002b">
 
 
 
