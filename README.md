@@ -141,4 +141,20 @@ Once you're comfortable with the concepts and tools, you can pursue certificatio
 - **Kubernetes Administrator (CKA)**.
 - **HashiCorp Certified: Terraform Associate**.
 
+---
+Tools Covered 
+* Git - version controls system
+* jenkins - continues integration
+* Maven - Build tool
+* SonarQube - Code analysis
+* Jfrog artifactry - artifact repository
+* docker - containerization
+* Ansible - deployment & configuration management
+* kubernetes - container management 
+* prometheus - monitoring and alerting 
+
+---
+DevOps setup configured on AWS
+AWS account create.
+
 
