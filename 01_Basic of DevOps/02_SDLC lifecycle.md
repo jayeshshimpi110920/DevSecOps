@@ -4,3 +4,11 @@
 <img width="490" alt="{4DC9C200-98EB-4180-A924-4D005269F964}" src="https://github.com/user-attachments/assets/298a490b-8b9f-4a3f-ac38-4fb099690f31">
 
 ---
+DevOps LifeCycle -
+<img width="476" alt="{FDC6958C-9308-4EBC-AEF0-04F4E3389A1D}" src="https://github.com/user-attachments/assets/0fb9f98d-c311-4ff4-960f-fe5d33614a9a">
+
+
+
+
+
+
