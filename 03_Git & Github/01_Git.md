@@ -42,4 +42,75 @@ create files or folder
    git status
 
 
+**git ignore** - create a file with name .gitignore 
+its a file which ignore the sensitive files to add or push it to environment.
+like .env and API keys and other-> how to ignore just inside .gitignore file add respective file name in each line one name and all set.
+
+<img width="226" alt="{C1BA217D-ECF4-4CC5-8E2A-597480B7A1C2}" src="https://github.com/user-attachments/assets/338be38b-8b6d-4d19-8bf5-d5e4c812f816">
+
+Commit behind the scence :
+<img width="313" alt="{C646D215-F1BA-498C-BA7E-4CF5A3B2D085}" src="https://github.com/user-attachments/assets/977b5868-8d8a-4b86-b3b2-08c73d1a2e34">
+
+---
+## Branch (master/main)
+
+`git branch` - just to check which branch its pointing to <br>
+*master by default
+<img width="337" alt="{6ADDC826-8482-4BC6-B744-A911AA1755BE}" src="https://github.com/user-attachments/assets/79c0b4bf-5cfd-498d-9da9-131e48d346fd">
+Head - head points to where a branch is currently at 
+
+how to create a new branch - <br>
+`git branch newBranchNamehere`
+
+how to move to other branch - <br>
+`git checkout newBranchNamehere` or `git switch newBranchNamehere`
+
+-> commit before switching to another branch
+-> go to .git folder & checkout HEAD file
+-> while working with branches they totally unaware about what is going on with other branch 
+
+shortcuts:
+`git switch -c dark-mode` (create a brANCH AND move there)
+`git checkout -b pink-mode` (create a branch and move there)
+
+
+## Merging the branches 
+
+<img width="282" alt="{9B588DA0-18AC-401A-B449-C39854530492}" src="https://github.com/user-attachments/assets/2e4b580e-451e-4743-8ec0-966baf784016">
+
+go to master/main branch - <br>
+`git merge newBranchNamehere`
+
+to delete `newBranchNamehere` our branch now 
+`git branch -d newBranchNamehere`
+
+Note: keep whatever you want , remove markers & Save :)
+
+---
+## Git Diff :
+
+<img width="314" alt="{07BEDA88-2266-4E80-A2E6-F3C40B0E65BC}" src="https://github.com/user-attachments/assets/e48143ef-bb6c-4178-8be3-3fd700dbdc09">
+
+Git diff : 
+git a unique commit code by doing <br>
+`git log --oneline` <br>
+
+`git diff --staged` ->> to compare the changes in the staged area to the last commit
+`git diff 9dd38fa 83ja99a`  ->> to check the difference between two commit of file 
+
+---
+## Git Stash
+- create a repo, work & commit on main
+- switch to another branch & work
+- conflicting changes do not allow to switch branch, without commits
+
+
+
+
+
+
+
+
+
+
    
