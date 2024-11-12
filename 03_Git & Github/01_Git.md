@@ -100,9 +100,24 @@ git a unique commit code by doing <br>
 
 ---
 ## Git Stash
+`git stash` is a command used to temporarily save uncommitted changes in your working directory without committing them. This allows you to work on something else (like switching branches) and return to your saved changes later.
+
 - create a repo, work & commit on main
 - switch to another branch & work
 - conflicting changes do not allow to switch branch, without commits
+
+<img width="318" alt="{B013072A-9301-430A-A49E-3998D4C2E709}" src="https://github.com/user-attachments/assets/e9d7c6b8-807a-444c-acf6-4797e0775095">
+
+`git checkout 9hj33u3` -> to go specific commit point
+to go back used `git checkout master`
+
+---
+## Git Rebase
+<img width="268" alt="{20E9E8B9-D789-4114-BCCA-322A56497EE4}" src="https://github.com/user-attachments/assets/d653b696-2dd6-4885-bcf6-65e23eccfb6f">
+
+
+
+
 
 
 
