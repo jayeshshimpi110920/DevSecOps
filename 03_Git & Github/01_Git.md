@@ -102,6 +102,15 @@ git a unique commit code by doing <br>
 ## Git Stash
 `git stash` is a command used to temporarily save uncommitted changes in your working directory without committing them. This allows you to work on something else (like switching branches) and return to your saved changes later.
 
+> sometimes you want to switch the branches , but you are working on an incomplete part of your current project. <br>
+> You don't want to make a commit of half-done work. Git stashing allows you to do so.
+>  Note : Normally if we want to switch branch we need to commit the code and switch to the new branch.. and if you switch branch without committing.
+> Two things Will happen -<br>
+> 1) Switching to the branch carrying the changes. <br>
+> 2) Git will not allow to switch the branch and asks commit or stash the changes.
+
+**git stash command enable you to switch branches without committing the current branch.**
+
 - create a repo, work & commit on main
 - switch to another branch & work
 - conflicting changes do not allow to switch branch, without commits
@@ -113,7 +122,12 @@ to go back used `git checkout master`
 
 ---
 ## Git Rebase
+
+**git rebase** is a Git command used to integrate changes from one branch into another by moving or "rebasing" the base of a branch onto another commit. It helps to create a linear history in a repository, which can make it easier to follow the project's development.
+
 <img width="268" alt="{20E9E8B9-D789-4114-BCCA-322A56497EE4}" src="https://github.com/user-attachments/assets/d653b696-2dd6-4885-bcf6-65e23eccfb6f">
+
+
 
 
 
