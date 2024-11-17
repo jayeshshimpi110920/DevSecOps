@@ -1,3 +1,5 @@
+## Git and Github Interview Question --
+
 1) **What is Git?** - Git is a __distributed version control__ system used to track changes in source code during software development, enabling multiple developers to collaborate.
 
 2) **What is the difference between Git and GitHub?**
@@ -67,6 +69,8 @@ A **Version Control System (VCS)** is a tool that helps manage changes to source
 
 6) **How do you initialize a Git repository?** - By using command ``` git init ```
 
+---
+
 7) **What is the difference between `git pull` and `git fetch` and 'git clone`?** -
 * **git clone** - The clone command in git is used when you want to download an existing git repository to your local computer.
 * **git pull** -  When you want to take changes or updates done by other developer/team member on git repository, you have to use git pull. <br>
@@ -84,6 +88,106 @@ Your teammate pushes some updates to the remote repository.
 `git pull` = Fetch + Apply changes.
 
 ---
+8) **What is Git branch ?** - A branch is an independent line of development. It is used to develop features, fix bugs, or experiment without affecting the main codebase. <br>
+-Work on new features or fixes independently. <br>
+-Switch between different version of code <br>
+-Merge your changes back into the main branch once they're complete and tested
+
+9) **How do you create a new branch in Git?** -  Use the command --  `git branch <branch_name>`
+10) **How do you switch branches?** Use the command: -- `git checkout <branch_name>` or in newer git version `git switch <branch_name>`
+11) **How do you merge two branches?** - Use the command -- `git merge <branch_name>`
+
+---
+
+12) **what is Git stash ?** - Git stash temporarily saves uncommitted changes so you can work on something else without committing those changes. and them come back with your current branch once done. <br>
+Command -- `git stash` <br>
+- let us say you working in one of the branch and wanna switch it to other branch..... then before switching it to other branch we definaly need to commit our code before switching it, if its completed. <br>
+- Once we move to other branch without commit, your committed changes still remain in your working directory-but those changes are now associated with new branch and if we commit in new branch , then those changes will saved to newer branch instead of older one.
+- There is no code loss, unless you manually discard them. <br>
+- This can cause confusion because you might unintentionally commit changes to the wrong branch. <br>
+- Thatttt whyyyy Git stash comes into piture.
+
+  
+- **Switch without commit**: Uncommitted changes stay in your working directory and follow you to the new branch, as long as there are no conflicts.  
+- **Switch with commit**: Changes are saved in the current branch, and switching is safe without affecting the new branch.  
+- **Switch with stash**: Temporarily saves your changes, allowing a clean switch, and you can reapply them later.
+
+---
+
+13) **What is a detached HEAD in Git?** - It occurs when you checkout a commit (not a branch), leaving your HEAD pointing to a specific commit instead of a branch. <br>
+-Move `HEAD` to specific commit insted of branch.
+-Checking out specific commit - `git checkout <commit-hash>`
+-checking out a tag - `git checkout <tag-name>`
+
+
+---
+## Advanced -
+
+Q) **what if i commited code in current state let say this one is 8th commit i made just now, i wanna go  back to detached head to 6th commit which i made, and i noticed im doing wrong i want current state should be my 6th commit beacause what ever commit i made is useless.** <br>
+--> If you’re in a **detached HEAD** state and want to reset your current state to a previous commit (like the 6th commit), essentially discarding all the changes and commits you made after it, you can do this safely.
+
+Here’s what to do:
+
+### **Steps to Discard Changes and Set to the 6th Commit:**
+
+1. **Move to the 6th Commit:**
+   ```bash
+   git checkout <6th-commit-hash>
+   ```
+
+2. **Reset the Branch to the 6th Commit:**
+   If you're currently in the detached HEAD, you’ll first need to reattach to your branch and then reset it:
+   ```bash
+   git checkout <branch-name>  # Attach to your branch (e.g., 'main') (just to go current state, not in 6th commit)
+   git reset --hard <6th-commit-hash>  # Reset to the 6th commit 
+   ```
+
+3. **Clean Up the Detached HEAD:**
+   - After `git reset --hard`, your branch will now point to the 6th commit.
+   - The commits you made after the 6th commit (like the 8th one) will no longer exist in the branch unless they are part of the **reflog** (reflog below) .
+
+### **What Each Command Does:**
+
+- **`git checkout <commit-hash>`**: Switches to the specified commit, entering a detached HEAD state.
+- **`git reset --hard <commit-hash>`**: Moves the branch pointer to the specified commit and discards all changes/commits made after it.
+
+### **Warning:**
+- **Use `--hard` carefully**, as it permanently removes uncommitted changes and the history of commits beyond the specified point. 
+- If you later realize you need the discarded commits, you can recover them using `git reflog`.
+
+---
+
+Q) **What is git rebase?** - git rebase is a command used in Git to integrate changes from one branch into another by reapplying commits on top of the target branch. It provides a cleaner, linear commit history compared to merging.<br>
+**How it works?** <br>
+- Git finds all commits from current branch that are not in the target branch.
+- It replays these commit one by one on top of target branch.
+- Syntax - `git rebase <branch-name>` the branch-name , the branch you want to rebase onto.
+- lets say you working on `feature` branch and 'git checkout feature` and then rebase onto main `git rebase main` . Git reapplies feature branch commits on top of latest main
+- if conflict occur, git pause the rebase and resolve the conflict in your editor. and then `git add <file>` and `git rebase --continue`
+- Now your `feature` branch now has a clean history based on the latest `main`
+<br>
+**Advantage of rebase than merge**
+- Cleaner commit history (linear, no merge commits)
+- Easier to read and review history
+**Disadvantage of rebase** -
+- Use rebase for private branches and local changes, For shared branches prefer `merge` to avoid rewriting shared history.
+- Rewriting history can cause issues if the branch has already been shared (e.g., force-pushing rebased changes can break others' work).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
