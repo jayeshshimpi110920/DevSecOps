@@ -1,8 +1,10 @@
 ## Git and Github Interview Question --
 
-1) **What is Git?** - Git is a __distributed version control__ system used to track changes in source code during software development, enabling multiple developers to collaborate.
+1) **What is Git?** - Git is a __distributed version control__ system used to track changes in source code during software development, enabling multiple developers to collaborate..
+2) **what is Repository/Repo in git?** - Repo is like a file strycture that stores all files for a project. And which is continuously track changes made to these files over time, helping team work together evenly. <br>
+-Git can control both **local repositories (on your own machine)** and **remote repositories (usually hosted on platform like Github, Gitlab or Bitbucket)** , allowing teamwork and backup.
 
-2) **What is the difference between Git and GitHub?**
+3) **What is the difference between Git and GitHub?**
 * **Git**: A version control tool for managing code.
 * **GitHub**: A cloud-based hosting service for Git repositories.
 
@@ -172,6 +174,18 @@ Q) **What is git rebase?** - git rebase is a command used in Git to integrate ch
 **Disadvantage of rebase** -
 - Use rebase for private branches and local changes, For shared branches prefer `merge` to avoid rewriting shared history.
 - Rewriting history can cause issues if the branch has already been shared (e.g., force-pushing rebased changes can break others' work).
+
+---
+
+Q) **How do you resolve merge conflicts?** -- while merging if conflict occurs , open the conflicting file(s). manually edit to resolve conflicts. and then `git add <file>` and complete the merge with `git commit -m "merge solved"` 
+
+Q) **what is purpose of `.gitignore` ?** -  `.gitignore` file specifies files or directories that Git should ignore, preventing them from being tracked.
+
+Q) **How to view commit history** - Use command : `git log`
+
+Q) **How do you delete a branch in Git?** - Locally - `git branch -d <branch-name>` and remotely `git push origin --delete <branch-name>`
+
+Q) 
 
 
 
