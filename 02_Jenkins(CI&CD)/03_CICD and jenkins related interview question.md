@@ -3,7 +3,7 @@
 **1. What is CI/CD?** - CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. It is a method to frequently deliver apps to customers by introducing automation into the stages of app development.
 
 **2. What are the benefits of CI/CD?** - Benefits include faster time to market, reduced risk, improved quality, better collaboration, and continuous feedback.
-
+ 
 **Continuous Integration (CI)** - CI is a practice where developers frequently merge their code changes into a central repository, followed by automated builds and tests.
 
 **Continuous Deployment (CD)**- CD is automates the release of every successful code change to production without manual approval.
