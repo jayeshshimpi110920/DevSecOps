@@ -185,7 +185,50 @@ Q) **How to view commit history** - Use command : `git log`
 
 Q) **How do you delete a branch in Git?** - Locally - `git branch -d <branch-name>` and remotely `git push origin --delete <branch-name>`
 
-Q) 
+Q) **What is git push command ?** - The git push command is used to share local repository changes to remote repository. It changes the remote repository with the recent commit from the fixed local branch.
+
+Q) **What is the difference between git init and git clone?** - 
+'git init' develops a new, empty Git repository in the present directory, while 'git clone' copies an existing remote repository, containing all files and history, to a local directory.
+
+---
+
+Q) **What is a Git bundle?** - 
+A Git bundle is a collective file that wraps all data from Git repository, such as commits, branches, and tags. It acts as a handy approach for relocating a repository offline or sharing upgrades when network connection is not available. To form a git bundle, perform the following command:
+
+`git bundle create <bundle_file> <refs>`
+
+---
+Q) **Git reflog ?** -
+
+
+---
+
+Q) **The Three-Tree Architecture ?**- 
+In a typical Git repository, there is a working directory, staging area, and commit history. Each tracks the project's state at various stages.
+
+* **Working Directory**: Refers to the current, live set of files and directories. This is the version of the project that you actively work on and modify.
+* **Staging Area** (also known as the "index"): Serves as a buffer zone. Files in this area are marked for inclusion in the next commit. You control what content moves from the working directory to the staging area.
+* **Commit History** (in the Git directory): Represents the timeline of commits in the form of a versioned archive. It also houses the full content of the project at relevant commit points.
+
+Q) **What is the difference between a working directory, staging area, and repository in Git?** - 
+
+**Working Directory**
+The working directory is your playground. It's your space for experimenting, where you can edit files, merge different versions, and even create new ones.
+
+**Staging Area (Index)**
+The staging area (also known as the Index) is a kind of middle-ground. Here you can make fine adjustments to what changes will be included in your next commit. You have two types of files here:
+
+**MDS**: Files that have been modified since your last commit  <br>
+**SML**: Files that have been changed and prepared for your next commit <br>
+When you're happy with your changes in the staging area, you "stage" them. Staging in this context is like flagging certain parts of your project that you want to be saved in your next commit. Notice that this step is completely optional.
+
+**Repository (History)**
+The repository is the final tier, dealing with the preservation of your work. Think of it as the local repository that serves as the safe house for all your commits. It keeps track of all changes and commits you've made, ensuring that you can still retrieve them even after major updates.
+
+The repository is also broken down into three apparent "trees" - the Working Directory, the Staging Area, and the last one, the HEAD. The HEAD points to your most recent commit. These three trees can seem confusing at first. But really, they're straightforward to understand - they represent the current status of your project, changes that you're planning to commit, and the commits that you've confirmed you want to save in the future.
+
+
+
 
 
 
